@@ -1,4 +1,3 @@
-
 get-appxpackage *skypeapp* | remove-appxpackage
 get-appxpackage *zunemusic* | remove-appxpackage
 get-appxpackage *zune* | remove-appxpackage
