@@ -1,5 +1,5 @@
-$dc = "ROMAISD" # Specify the domain to join.
+.dc = "ROMAISD" # Specify the domain to join.
 $pw = "Adriel2016!" | ConvertTo-SecureString -asPlainText –Force # Specify the password for the domain admin.
-$usr = "$dc\asbenavides" # Specify the domain admin account.
+$usr = ".dc/asbenavides" # Specify the domain admin account.
 $creds = New-Object System.Management.Automation.PSCredential($usr,$pw)
-Add-Computer -DomainName $dc -Credential $creds -restart -force -verbose # Note that the computer will be restarted automatically.
+Add-Computer -DomainName .dc -Credential $creds -restart -force -verbose # Note that the computer will be restarted automatically.
