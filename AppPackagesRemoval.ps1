@@ -14,3 +14,6 @@ get-appxpackage *phone* | remove-appxpackage
 get-appxpackage *bingsports* | remove-appxpackage
 get-appxpackage *sway* | remove-appxpackage
 get-appxpackage *xbox* | remove-appxpackage
+get-appxpackage *spotify* | remove-appxpackage
+get-appxpackage *facebook* | remove-appxpackage
+get-appxpackage *tiktok* | remove-appxpackage
