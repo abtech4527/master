@@ -7,3 +7,4 @@ Get-AppxPackage -PackageTypeFilter Main, Bundle, Resource | Where-Object {$_.Pac
 Get-AppxPackage -PackageTypeFilter Main, Bundle, Resource | Where-Object {$_.PackageFullName -like "*clipchamp*"} | Remove-AppxPackage
 Get-AppxPackage -PackageTypeFilter Main, Bundle, Resource | Where-Object {$_.PackageFullName -like "*facebook*"} | Remove-AppxPackage
 Get-AppxPackage -PackageTypeFilter Main, Bundle, Resource | Where-Object {$_.PackageFullName -like "*adobecreativecloudexpress*"} | Remove-AppxPackage
+Get-AppxPackage -PackageTypeFilter Main, Bundle, Resource | Where-Object {$_.PackageFullName -like "*solitaire*"} | Remove-AppxPackage
