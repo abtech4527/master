@@ -1,3 +1,2 @@
-@echo off
 
-msiexec.exe /i "C:\Program Files\Sophos\Sophos Endpoint Agent\uninstallcli.exe" /qn
+C:\Program Files\Sophos\Sophos Endpoint Agent\uninstallcli.exe
