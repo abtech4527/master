@@ -1,5 +1,5 @@
-$domain= "romaisd.com"
-$User= "romaisd.com\bhernandez"
-$Pass = ConvertTo-SecureString "Tech2275" -AsPlainText -Force
+$domain= "adm-vm-dc01.romaisd.com"
+$User= "romaisd.com\asbenavides"
+$Pass = ConvertTo-SecureString "Adriel3190!" -AsPlainText -Force
 
-Reset-ComputerMachinePassword -Server $domain -Credentia ((New-Object System.Management.Automation.PSCredential($User, $Pass )))
+Reset-ComputerMachinePassword -Server $domain -Credential ((New-Object System.Management.Automation.PSCredential($User, $Pass )))
