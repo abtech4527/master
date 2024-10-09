@@ -1,2 +1,2 @@
 @echo off
-net user Sysop SET PasswordExpires=FALSE
+wmic UserAccount where Name="Sysop" set PasswordExpires=False
