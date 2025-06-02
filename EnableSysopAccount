@@ -1,0 +1,3 @@
+@echo off
+
+Net user Sysop /active:yes
