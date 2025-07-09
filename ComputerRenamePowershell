@@ -1,1 +1,1 @@
-Rename-Computer -NewName CODESK-ACASTILLO -Restart
+[Rename-Computer] -NewName CODESK-ACASTILLO -Restart
