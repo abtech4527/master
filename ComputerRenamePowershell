@@ -1,1 +1,1 @@
-Rename-Computer -ComputerName CODESK-ANGONZAL -NewName "CODESK-ACASTILLO" -DomainCredential asbenavides\Adriel3190! -Restart
+Rename-Computer -ComputerName CODESK-ANGONZAL -NewName CODESK-ACASTILLO -DomainCredential asbenavides\Adriel3190! -Restart
