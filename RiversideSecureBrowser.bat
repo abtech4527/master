@@ -3,7 +3,7 @@ REM Define variables
 SET SHARE_PATH=\\192.168.119.137\Technology_Software\Update Softwares\DataManager.msi
 SET USERNAME=romaisd.com\asbenavides
 SET PASSWORD=Adriel3190!
-SET MSI_FILE=Installer.msi
+SET MSI_FILE=\\192.168.119.137\Technology_Software\Update Softwares\DataManager.msi
 
 
 REM Authenticate and connect to the network share, mapping it to a temporary drive letter (e.g., Z:)
@@ -15,7 +15,7 @@ IF %ERRORLEVEL% NEQ 0 (
 )
 
 REM Install the MSI file from the mapped drive silently (/qn) with logging (/L*V)
-start /wait msiexec.exe /i "%SHARE_PATH%" /qb
+start /wait msiexec.exe /i "Z:\%MSI_FILE%" /qb
 
 REM Disconnect the network drive
 NET USE Z: /delete
