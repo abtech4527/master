@@ -15,7 +15,7 @@ IF %ERRORLEVEL% NEQ 0 (
 )
 
 REM Install the MSI file from the mapped drive silently (/qn) with logging (/L*V)
-start /wait msiexec.exe /i "Z:\%SHARE_PATH%" /qb
+start /wait msiexec.exe /i "Z:\%MSI_FILE%" /qb
 
 REM Disconnect the network drive
 NET USE Z: /delete
