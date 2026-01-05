@@ -1,6 +1,6 @@
 @echo off
 REM Define variables
-SET SHARE_PATH=\\192.168.119.137\Technology_Software\
+SET SHARE_PATH=\\192.168.119.137\Technology_Software\DataManager.msi
 SET USERNAME=.\asbenavides
 SET PASSWORD=Adriel3190!
 SET MSI_FILE=DataManager.msi
@@ -15,7 +15,7 @@ IF %ERRORLEVEL% NEQ 0 (
 )
 
 REM Install the MSI file from the mapped drive silently (/qn) with logging (/L*V)
-start /wait msiexec.exe /i "Z:\%MSI_FILE%" /qb
+start /wait msiexec.exe /i "%SHARE_PATH%" /qb
 
 REM Disconnect the network drive
 NET USE Z: /delete
