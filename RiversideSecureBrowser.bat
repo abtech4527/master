@@ -8,7 +8,7 @@ SET MSI_FILE=DataManager.msi
 
 REM Authenticate and connect to the network share, mapping it to a temporary drive letter (e.g., Z:)
 REM The /persistent:no flag ensures the mapping is removed after the script finishes
-NET USE Z: "%SHARE_PATH%" %PASSWORD% /USER:%USERNAME% /persistent:no
+NET USE Z: "%SHARE_PATH%" /USER:%USERNAME% /PASSWORD:%PASSWORD% /persistent:no
 IF %ERRORLEVEL% NEQ 0 (
     echo Failed to connect to network share. Exiting.
     goto end
