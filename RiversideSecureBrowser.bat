@@ -3,7 +3,7 @@ REM Define variables
 SET SHARE_PATH=\\192.168.119.137\Technology_Software\Update Softwares\DataManager.msi
 SET USERNAME=romaisd.com\asbenavides
 SET PASSWORD=Adriel3190!
-SET MSI_FILE=DataManager.msi
+SET MSI_FILE=Installer.msi
 
 
 REM Authenticate and connect to the network share, mapping it to a temporary drive letter (e.g., Z:)
