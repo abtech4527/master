@@ -1,6 +1,6 @@
 @echo off
 REM Define variables
-SET SHARE_PATH=\\192.168.119.137\Technology_Software\Update Softwares\DataManager.msi
+SET SHARE_PATH=\\192.168.119.137\Technology_Software\
 SET USERNAME=romaisd.com\asbenavides
 SET PASSWORD=Adriel3190!
 SET MSI_FILE=DataManager.msi
