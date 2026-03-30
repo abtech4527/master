@@ -1,3 +1,3 @@
 @echo off
 
-msiexec.exe /x "C:\Student\Student.msi" /qn
+msiexec.exe /i "C:\Student\Student.msi" /qn /uninstall
