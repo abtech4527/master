@@ -9,7 +9,7 @@ NET USE Z: %SHARE_PATH%  /persistent:no
 
 REM Install the MSI file from the mapped drive silently (/qn) with logging (/L*V)
 
-start /wait msiexec.exe /i \\ADM-VM-DC01\Shares\Software$\InsightStudentSetup.msi /qb ADVANCED_OPTIONS=1 SECURE_MODE=0 CHANNEL=135 ENABLECHANNELSELECT=1
+start /wait msiexec.exe /i "\\ADM-VM-DC01\Shares\Software$\InsightStudentSetup.msi" /qb CMDLINE="/classId Class135 /adminPwd Password123 /consolePwd Password345
 
 REM Disconnect the network drive
 NET USE Z: /delete
