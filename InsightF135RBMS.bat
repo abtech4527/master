@@ -9,8 +9,7 @@ NET USE Z: %SHARE_PATH%  /persistent:no
 
 REM Install the MSI file from the mapped drive silently (/qn) with logging (/L*V)
 
-start /wait "//ADM-VM-DC01\Shares\Software$\InsightStudentSetup.msi" /qn CMDLINE="/classId Class135 /hideSysTrayIcon /adminPwd Password123 /installBrowserExtension /enableWebHistory /sharedSecret Password345 /suppressreboot"
-REM Disconnect the network drive
+start /wait msiexec.exe /i "//ADM-VM-DC01\Shares\Software$\InsightStudentSetup.msi" /qn CMDLINE="/classId Class135 /hideSysTrayIcon /adminPwd Password123 /installBrowserExtension /enableWebHistory /sharedSecret Password345 /suppressreboot"
 NET USE Z: /delete
 
 :end
