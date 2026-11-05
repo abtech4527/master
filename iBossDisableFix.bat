@@ -26,5 +26,7 @@ echo ====================================================
  reg add %KEY_PATH% /v "ServiceStartupMode" /t REG_DWORD /d 2 /f
 
 
+
 echo Task finished.
-pause
+
+echo net start ibsa
